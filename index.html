@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PhotoHome</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- TOPBAR -->
+<div class="topbar">
+    <div class="brand">Hameed Photo Studio</div>
+
+    <div class="menu">
+        <a href="#">Home</a>
+        <a href="#footer">About</a>
+        <a href="#" onclick="openContact()">Contact</a>
+
+        <a href="cart.html" class="cart-btn">
+            🛒 Cart <span id="cartCount">0</span>
+        </a>
+    </div>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+
+    <h1>Your Photos. Our Craft. One Perfect Creation.</h1>
+
+    <p>
+      Turn your memories into premium frames, mugs, shirts and personalized gifts.
+    </p>
+
+    <a href="#products" class="hero-btn">Explore Collection</a>
+
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<div class="container" id="products">
+    <div id="productGrid" class="grid"></div>
+</div>
+
+<!-- FOOTER -->
+<div class="footer" id="footer">
+    <p>© 2026 PhotoHome</p>
+</div>
+
+<!-- CONTACT -->
+<div class="contact-box" id="contactBox" style="display:none;">
+    <div class="contact-content">
+        <h3>Contact Us</h3>
+        <p>📞 03338181082</p>
+        <p>📧 photohome92@gmail.com</p>
+        <button onclick="closeContact()">Close</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
